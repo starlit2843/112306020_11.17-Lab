@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        img {
+            max-height: 100px; /* adjust as needed */
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr rowspan = "3">
+        <caption>About -- 112306020</caption>
+        </tr>
+        <tr>
+            <td rowspan="3">
+                <img src="selfie.jpg" alt="Personal Photo">
+                <br>Personal Photo
+            </td>
+            <td colspan="2">
+                <form action = "/action_page.php">
+                Name: <input type = "text" name = "name"><br>
+                </form>
+            Gender:
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="other"> Other
+            </td>
+        </tr>
+        <tr>
+            <td>County:
+                <select>
+                    <option value="taipei">Taipei</option>
+                    <option value="tainan">Tainan</option>
+                    <option value="taichung">Taichung</option>
+                    <option value="taoyuan">Taoyuan</option>
+                </select>
+            </td>
+            <td>Birthday: <input type="date"></td>
+        </tr>
+        <tr>
+            <td colspan="2">E-mail: <input type="email"></td>
+        </tr>
+   
+        <tr>
+            <td >Hobby</td>
+            <td colspan="2">
+                <input type="checkbox" id="swimming"> Swimming
+                <input type="checkbox" id="volleyball"> Volleyball
+                <input type="checkbox" id="movie"> Movie
+                <input type="checkbox" id="game"> Game
+                <input type="checkbox" id="sleep"> Sleep
+            </td>
+        </tr>
+        <tr>
+            <td>Skill</td>
+            <td colspan = "2">
+                <input type="checkbox" id="java"> Java
+                <input type="checkbox" id="html"> HTML
+                <input type="checkbox" id="python"> Python
+                <input type="checkbox" id="office"> Microsoft Office
+                <input type="checkbox" id="premiere"> Premiere
+            </td>
+        </tr>
+        <tr>
+            <td>Say something</td>
+            <td colspan="2">
+                <textarea placeholder="Say something here."></textarea>
+            </td>
+        </tr>
+        <td colspan = "3">
+                <input type = "submit" value = "提交">
+                <input type = "reset" value = "重設">
+        </td>
+       
+    </table>
+
+</body>
+</html>
